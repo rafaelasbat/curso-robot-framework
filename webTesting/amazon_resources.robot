@@ -3,15 +3,16 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
+${BROWSER}               chrome
 ${URL}                   https://www.amazon.com.br/
 ${MENU_ELETRONICOS}      //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
 ${HEADER_ELETRONICOS}    //h1[contains(.,'Eletrônicos e Tecnologia')]
-${BARRA_PESQUISA}        //input[contains(@type,'text')]
-${BOTAO_PESQUISA}                 //input[contains(@type,'submit')]
+${BARRA_PESQUISA}        twotabsearchtextbox
+${BOTAO_PESQUISA}        nav-search-submit-button
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=chrome
+    Open Browser    browser=${BROWSER} 
     Maximize Browser Window
 
 Fechar o navegador
@@ -40,5 +41,5 @@ Digitar o nome de produto "${NOME_PRODUTO}" no campo de pesquisa
 Clicar no botão de pesquisa
     Click Element    locator=${BOTAO_PESQUISA}
 
-Verificar o resultado da pesquisa se está listando o produto pesquisado
-    Wait Until Element Is Visible    locator=//span[@class='a-color-state a-text-bold'][contains(.,'"Xbox Series S"')]
+Verificar o resultado da pesquisa se está listando o produto "${NOME_PRODUTO}"
+    Wait Until Element Is Visible    locator=//span[@class='a-color-state a-text-bold'][contains(.,'"${NOME_PRODUTO}"')]
