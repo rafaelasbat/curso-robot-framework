@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Essa suite testa o site da Amazon.com.br
+Documentation    Essa suite testa o site da Amazon.com.br utilizando como método de escrita de testes o modelo Procedural
 Resource         amazon_resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
