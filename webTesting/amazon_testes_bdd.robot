@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Essa suite testa o site da Amazon.com.br utilizando como método de escrita de testes o modelo BDD com Gherkin
 Resource         amazon_resouces_bdd.robot
+Force Tags       bdd
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
