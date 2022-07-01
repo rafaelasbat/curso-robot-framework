@@ -41,4 +41,20 @@ Clicar no botão de pesquisa
     Click Element    locator=${BOTAO_PESQUISA}
 
 Verificar o resultado da pesquisa se está listando o produto "${NOME_PRODUTO}"
-    Wait Until Element Is Visible    locator=//span[@class='a-color-state a-text-bold'][contains(.,'"${NOME_PRODUTO}"')]
+    Wait Until Element Is Visible    locator=(//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'${NOME_PRODUTO}')])[1]
+
+Adicionar o produto "${PRODUTO}" no carrinho
+    Click Element    locator=(//span[@class='a-size-base-plus a-color-base a-text-normal'][contains(.,'${PRODUTO}')])[1]
+    Wait Until Element Is Visible    locator=//span[@class='a-size-large product-title-word-break'][contains(.,'${PRODUTO}')]
+    Click Element    locator=add-to-cart-button
+
+Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
+    Wait Until Element Is Visible    locator=//span[@class='a-size-medium-plus a-color-base sw-atc-text a-text-bold'][contains(.,'Adicionado ao carrinho')]
+
+Remover o produto "Console Xbox Series S" do carrinho
+    Click Element    locator=//a[@class='a-button-text']
+    Wait Until Element Is Visible    locator=//h1[contains(.,'Carrinho de compras')]
+    Click Element    locator=//input[contains(@value,'Excluir')]
+
+Verificar se o carrinho fica vazio
+    Wait Until Element Is Visible    locator=//div[contains(@data-action,'delete')]

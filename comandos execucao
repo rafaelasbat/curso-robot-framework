@@ -1,0 +1,3 @@
+robot -i {tag} {arquivo}
+
+robot -i remover_carrinho amazon_testes.robot
