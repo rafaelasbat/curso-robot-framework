@@ -1,7 +1,5 @@
 *** Settings ***
 Documentation    Resources dos casos de teste escritos em BDD, utilizando reaproveitamento de keywords de outro resouce
-Library    SeleniumLibrary
-Resource   C:/Users/psych/OneDrive/Documentos/QA/curso-robot-framework/webTesting/procedural/amazon_resources.robot
 
 *** Keywords ***
 Dado que estou na home page da Amazon.com.br
