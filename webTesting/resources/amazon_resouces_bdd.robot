@@ -29,13 +29,15 @@ E um produto da linha "Xbox Series S" deve ser mostrado na página
     Verificar o resultado da pesquisa se está listando o produto "Xbox Series S"
 
 Quando adicionar o produto "Console Xbox Series S" no carrinho
+    Quando pesquisar pelo produto "Xbox Series S"
+    Verificar o resultado da pesquisa se está listando o produto "Xbox Series S"
     Adicionar o produto "Console Xbox Series S" no carrinho
 
 Então o produto "Console Xbox Series S" deve ser mostrado no carrinho
     Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
 
 E existe o produto "Console Xbox Series S" no carrinho
-    Adicionar o produto "Console Xbox Series S" no carrinho
+    Quando adicionar o produto "Console Xbox Series S" no carrinho
     Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
 
 Quando remover o produto "Console Xbox Series S" do carrinho
