@@ -11,13 +11,13 @@ if [%tags%]==[] GOTO NOTUSINGTAGS
 :USINGTAGS
 echo Executando com as seguintes Tags: %tags%
 echo.
-set command=python -m robot -T -N "Log Cenarios Amazon" --include %tags% -d ./reports/frontend_%datetime%  tests\*.robot
+set command=python -m robot -T -N "Log Cenarios WEB" --include %tags% -d ./reports/frontend_%datetime%  tests\*.robot
 goto :EXECUTE
 
 :NOTUSINGTAGS
 echo Executando sem o uso de Tags.
 echo.
-set command=python -m robot -T -N "Log Cenarios Amazon" -d ./reports/frontend_%datetime%  tests\*.robot
+set command=python -m robot -T -N "Log Cenarios WEB" -d ./reports/frontend_%datetime%  tests\*.robot
 goto :EXECUTE
 
 :EXECUTE
