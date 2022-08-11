@@ -3,6 +3,8 @@ Documentation       Documentação da API: https://fakerestapi.azurewebsites.net
 Force Tags          getBooks
 
 Resource            ../resources/get.robot
+Resource            ../resources/helpers/hooks.robot
+
 Suite Setup         Conectar a minha API
 
 *** Test Case ***
