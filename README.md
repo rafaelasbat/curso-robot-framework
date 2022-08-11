@@ -33,15 +33,22 @@ Para mais informações sobre cada library pode consultar o site da robot (https
 Após baixar as librarys necessárias e clonar o projeto em sua máquina, abra o VSCODE e instale a extensão Robot Code.
 
 Para executar os testes há duas maneiras:
+
 1 - Com a própria extensão:
-  a - Abra a suite de teste que deseja executar (dentro da pasta /tests) e os arquivos de resources (tanto os de cada teste como o hooks, library e variables)
-  b - Com todos arquivos abertos, vá no arquivo de teste e clique no play que estará ou em frente as Settings (para executar todos os testes da suíte) ou na frente do cenário (para executar um cenário só)
+
+    a - Abra a suite de teste que deseja executar (dentro da pasta /tests) e os arquivos de resources (tanto os de cada teste como o hooks, library e variables)
+  
+    b - Com todos arquivos abertos, vá no arquivo de teste e clique no play que estará ou em frente as Settings (para executar todos os testes da suíte) ou na frente do cenário (para executar um cenário só)
  
 2 - Com o arquivo batch (implementado apenas nos cenários de WEB):
-  a - Abra o terminal do VSCODE e caminhe até a pasta /web/execution
-  b - Dentro da pasta selecione o arquivo "Testes_Web.bat" e aperte enter
-  c - A execução irá pedir a tag a ser executada (as tags se encontram no parametro Force Tags dentro de caeda arquivo presente na pasta /tests)
-  d - Preencha a tag e aperte enter
+
+    a - Abra o terminal do VSCODE e caminhe até a pasta /web/execution
+  
+    b - Dentro da pasta selecione o arquivo "Testes_Web.bat" e aperte enter
+  
+    c - A execução irá pedir a tag a ser executada (as tags se encontram no parametro Force Tags dentro de caeda arquivo presente na pasta /tests)
+  
+    d - Preencha a tag e aperte enter
   
 ---
 ⌨️ com por Rafaela Batista 😊# Projeto Curso Robot Framework Básico
