@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Keywords gerais de todas as requisições
 
-Resource            ../helpers/librarys.robot
+Resource            ../helpers/libraries.robot
 
 *** Keywords ***
 ## Setup

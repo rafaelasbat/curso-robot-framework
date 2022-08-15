@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Essa suite testa o site da Amazon.com.br utilizando como método de escrita de testes o modelo BDD com Gherkin
 
-Resource         ../variables/Librarys_Variables.robot
+Resource         ../variables/libraries_variables.robot
 
 Force Tags       bdd
 Test Setup       Abrir o navegador

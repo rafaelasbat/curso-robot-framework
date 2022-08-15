@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Keywords dos endpoints de GET
 
-Resource            ../resources/helpers/librarys.robot
+Resource            ../resources/helpers/libraries.robot
 
 *** Keywords ***
 ## Ações

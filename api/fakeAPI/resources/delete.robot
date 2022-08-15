@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation       Keywords dos endpoints de POST
 
-Resource            ../resources/helpers/librarys.robot
+Resource            ../resources/helpers/libraries.robot
 
 *** Keywords ***
 ## Ações
